@@ -2,6 +2,7 @@
 #include "common.h"
 
 typedef enum {
+    AssetId_applet_icon,
     AssetId_battery_icon,
     AssetId_charging_icon,
     AssetId_folder_icon,

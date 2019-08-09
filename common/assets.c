@@ -12,6 +12,7 @@ typedef struct {
 
 static bool g_assetsInitialized = 0;
 assetsDataEntry g_assetsDataList[AssetId_Max] = {
+    GENASSET("applet_icon.bin"),
     GENASSET("battery_icon.bin"),
     GENASSET("charging_icon.bin"),
     GENASSET("folder_icon.bin"),

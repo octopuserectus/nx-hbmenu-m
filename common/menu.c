@@ -617,12 +617,7 @@ void menuLoop(void) {
     #ifdef __SWITCH__
     AppletType at = appletGetAppletType();
     if (at != AppletType_Application && at != AppletType_SystemApplication) {
-        const char* appletMode = textGetString(StrId_AppletMode);
-        u32 x_pos = GetTextXCoordinate(interuimedium30, statusXPos, appletMode, 'r');
-        DrawText(interuimedium30, x_pos - 32, 46 + 18, themeCurrent.attentionTextColor, appletMode);
-    if (at != AppletType_Application && at != AppletType_SystemApplication) {
-    drawIcon(1180 - 8 - 24 - 112, 0 + 47 + 10 + 6, 24, 24, assetsGetDataBuffer(AssetId_applet_icon), themeCurrent.textColor);
-      }
+        drawIcon(1180 - 8 - 24 - 112, 0 + 47 + 10 + 6, 24, 24, assetsGetDataBuffer(AssetId_applet_icon), themeCurrent.textColor);
     }
     const char* loaderInfo = envGetLoaderInfo();
     if (loaderInfo) {

@@ -655,7 +655,7 @@ void menuLoop(void) {
     if (at != AppletType_Application && at != AppletType_SystemApplication && layoutobj->visible) {
         const char* appletMode = textGetString(StrId_AppletMode);
         u32 x_pos = GetTextXCoordinate(layoutobj->font, statusXPos, appletMode, 'r');
-        DrawText(layoutobj->font, layoutobj->posType ? x_pos + layoutobj->posStart[0] : layoutobj->posStart[0], layoutobj->posStart[1], themeCurrent.attentionTextColor, appletMode);
+        drawIcon(1180 - 8 - 24 - 112, 0 + 47 + 10 + 6, 24, 24, assetsGetDataBuffer(AssetId_applet_icon), themeCurrent.textColor);
     }
     const char* loaderInfo = envGetLoaderInfo();
     layoutobj = &themeCurrent.layoutObjects[ThemeLayoutId_LoaderInfo];

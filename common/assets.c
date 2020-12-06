@@ -7,6 +7,7 @@
 
 static bool g_assetsInitialized = 0;
 assetsDataEntry g_assetsDataList[AssetId_Max][2] = {
+    GENASSET("applet_icon.bin", IMAGE_MODE_RGBA32, 24, 24),
     GENASSET("battery_icon.bin", IMAGE_MODE_RGBA32, 24, 24),
     GENASSET("charging_icon.bin", IMAGE_MODE_RGBA32, 24, 24),
     GENASSET("folder_icon.bin", IMAGE_MODE_RGB24, 256, 256),
